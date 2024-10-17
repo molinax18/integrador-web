@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/index.css"
+    />
+    <script
+      src="./js/main.js"
+      defer
+    ></script>
+    <title>Principal</title>
+  </head>
+  <body>
+    <header class="header-principal">
+      <div class="contenedor-header">
+        <strong class="nombre">Concesionaria</strong>
+        <nav>
+          <ul class="nav-lista">
+            <li>
+              <a href="#">Artículos</a>
+            </li>
+            <li>
+              <a href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-principal flex-col">
+      <section class="quienes-somos contenedor flex-col">
+        <article class="flex-col">
+          <h2>¿Quiénes somos?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            commodi debitis quod deserunt soluta sapiente laborum rem quidem,
+            totam magni non eaque, error fugit vitae aut consectetur recusandae
+            eum illo nihil, ab voluptatem? Iste saepe quo enim aspernatur alias
+            omnis illum at consectetur hic numquam sapiente eius fuga quibusdam,
+            laudantium recusandae quas molestiae asperiores exercitationem.
+            Fugiat aliquid neque beatae natus?
+          </p>
+        </article>
+        <hr />
+        <article class="flex-col">
+          <h2>¿Qué ofreceremos?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ad,
+            sunt, nulla perferendis voluptas ex laudantium, eius dicta
+            voluptatem unde earum? Voluptatibus repellat numquam, placeat itaque
+            unde consectetur dolore ratione.
+          </p>
+          <ul class="lista-ofrecemos flex-col">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="vehiculos flex-col">
+        <div class="vehiculos-contenedor flex-col contenedor">
+          <h2>Vehículos</h2>
+          <!-- Carrousell -->
+          <article class="carrousell-contenedor">
+            <img
+              class="carrousell-img"
+              alt="Imágen de un coche"
+              id="carrousellImg"
+            />
+            <button
+              class="boton-carrousell"
+              onclick="decrement()"
+            >
+              Anterior
+            </button>
+            <button
+              class="boton-carrousell"
+              onclick="increment()"
+            >
+              Siguiente
+            </button>
+          </article>
+          <div class="vehiculo-contenedor">
+            <article class="vehiculo flex-col">
+              <h3>Vehículo 1</h3>
+              <hr />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laborum laudantium non ipsam cum quae ea?
+              </p>
+              <button class="boton">Comprar</button>
+            </article>
+            <article class="vehiculo flex-col">
+              <h3>Vehículo 2</h3>
+              <hr />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laborum laudantium non ipsam cum quae ea?
+              </p>
+              <button class="boton">Comprar</button>
+            </article>
+            <article class="vehiculo flex-col">
+              <h3>Vehículo 3</h3>
+              <hr />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laborum laudantium non ipsam cum quae ea?
+              </p>
+              <button class="boton">Comprar</button>
+            </article>
+            <article class="vehiculo flex-col">
+              <h3>Vehículo 4</h3>
+              <hr />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laborum laudantium non ipsam cum quae ea?
+              </p>
+              <button class="boton">Comprar</button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+.main-principal {  
+  gap: 4rem;
+  
+  margin: 3rem 0;
+  line-height: 1.5;
+}
+
+.quienes-somos { gap: 2rem; }  
+.article { gap: 1rem; }
+    
+.lista-ofrecemos {
+  gap: .40rem;
+  
+  padding: 1rem;
+  list-style: inside;
+  font-weight: 600;
+  color: darkslategray;
+}
+
+.vehiculos {
+  background-color: darkslategray;
+  color: beige;
+  padding: 2rem;
+}    
+
+.vehiculos h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.vehiculos-contenedor { gap: 2rem; }
+
+.carrousell-contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  padding-bottom: 2rem;
+  border-bottom: 2px solid lightgrey;
+}
+
+#carrousellImg {
+  grid-column: 1 / -1;
+
+  width: 100%;
+  max-height: 28rem;
+  object-fit: cover;
+}
+
+.boton-carrousell {
+  font-weight: bold;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: beige;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.vehiculo-contenedor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}        
+
+.vehiculo {
+  gap: 1rem;
+  align-self: start;
+  
+  max-width: 25rem;
+  border: 2px solid lightgrey;
+  border-radius: 1rem;
+  padding: .8rem;
+}
+        
+.boton {
+  align-self: start;
+  
+  color: darkslategray;
+  background-color: beige;
+  border: none;
+  border-radius: .5rem;
+  padding: .7rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+}

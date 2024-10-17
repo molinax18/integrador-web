@@ -1,0 +1,38 @@
+.contenedor-formulario {
+  align-self: center;
+  gap: 2rem;
+  
+  width: 36rem;
+  margin-top: 8rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 2px solid darkslategrey;
+}
+
+h2 {
+  color: darkslategray;
+}
+
+.formulario { gap: .8rem; }
+
+.formulario label {
+  color: darkslategray;
+  font-weight: 600;
+}
+
+.formulario input {
+  outline-color: darkslategray; 
+  padding: .5rem;
+  border: none;
+  border-radius: .3rem;
+}
+
+.boton {
+  margin-top: 1rem;
+  color: beige;
+  background-color: darkslategray;
+  padding: 1rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+}

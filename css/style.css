@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  background: seashell;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-principal {
+  padding: 1.5rem 3rem;
+  background-color: darkslategrey;
+  color: beige;
+}
+
+.contenedor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}  
+
+.nombre {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+    
+.nav-lista {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-lista li a {
+  cursor: pointer;
+  color: inherit;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 70rem;
+  margin-inline: auto;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
