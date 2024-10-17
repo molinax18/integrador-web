@@ -1,4 +1,4 @@
-const images = ["/img/auto1.webp", "/img/auto2.webp", "/img/auto3.webp", "/img/auto4.webp"];
+const images = ["./img/auto1.webp", "./img/auto2.webp", "./img/auto3.webp", "./img/auto4.webp"];
 let i = 0;
 
 const carrousellImg = document.getElementById("carrousellImg");
