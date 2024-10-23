@@ -1,11 +1,32 @@
+body{
+  background-color: rgb(32, 52, 70);
+  font-family: sans-serif;
+}
+
 .main-principal {  
   gap: 4rem;
-  
+  color: white;
   margin: 3rem 0;
   line-height: 1.5;
 }
 
-.quienes-somos { gap: 2rem; }  
+
+.seccion-1 {
+  gap: 2rem;
+  font-family: sans-serif;
+  
+}  
+
+.p-seccion-1{
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.quienes-somos{
+  font-size: 40px;
+}
+
 .article { gap: 1rem; }
     
 .lista-ofrecemos {
@@ -14,13 +35,16 @@
   padding: 1rem;
   list-style: inside;
   font-weight: 600;
-  color: darkslategray;
+  font-size: 17px;
+  letter-spacing: 1px;
+
 }
 
 .vehiculos {
-  background-color: darkslategray;
+  background-color: rgb(66, 176, 250);
   color: beige;
   padding: 2rem;
+
 }    
 
 .vehiculos h2 {
@@ -50,11 +74,14 @@
 
 .boton-carrousell {
   font-weight: bold;
-  border: none;
+  border: transparent;
+  border-bottom: 2px solid rgb(32, 52, 70);
   border-radius: 1.5rem;
   background-color: beige;
   padding: 1rem;
   cursor: pointer;
+  color: rgb(32, 52, 70);
+  font-size: 15px;
 }
 
 .vehiculo-contenedor {
@@ -69,17 +96,32 @@
   align-self: start;
   
   max-width: 25rem;
-  border: 2px solid lightgrey;
+  border: 3px solid white;
   border-radius: 1rem;
   padding: .8rem;
+}
+
+
+
+h3{
+  font-size: 25px;
+  font-weight: 1000;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.p-vehiculos{
+  font-size: 17px;
+  font-weight: 700;
 }
         
 .boton {
   align-self: start;
   
-  color: darkslategray;
+  color: rgb(32, 52, 70);
   background-color: beige;
-  border: none;
+  border: transparent;
+  border-bottom: 2px solid rgb(32, 52, 70);
   border-radius: .5rem;
   padding: .7rem 1.2rem;
   font-weight: 600;

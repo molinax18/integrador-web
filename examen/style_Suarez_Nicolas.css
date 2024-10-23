@@ -1,0 +1,78 @@
+body{background-color: beige;}
+
+*{font-family: sans-serif;}
+
+.formulario{
+    background-color: white;
+    border-top: 10px solid rgb(2, 155, 2);
+    border-radius: 15px;
+    width: 400px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.Titulo{
+    font-weight: bold;
+    font-size: 30px;
+    width: 370px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.texto{
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.input{
+    width: 370px;
+    margin: auto;
+    padding: 8px;
+    margin-bottom: 3px;
+    border: 1px solid rgb(190, 190, 190); 
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.input2{
+    font-size: 17.4px;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+.input3{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(190, 190, 190); 
+    border-radius: 5px;
+}
+
+.boton{
+    margin-top: 15px;
+    width: 100%;
+    padding: 7px;
+    background-color: rgb(6, 180, 6);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.feedback{
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+}
+
+h3{font-size: 25px;}
+
+.p_fb{
+    margin: 5px;
+    font-weight: bold;
+}

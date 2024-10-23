@@ -3,36 +3,44 @@
   gap: 2rem;
   
   width: 36rem;
-  margin-top: 8rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   padding: 1.5rem;
   border-radius: 1rem;
-  border: 2px solid darkslategrey;
+  border: 2px solid rgb(66, 176, 250);
 }
 
+body{background-color:  rgb(32, 52, 70);}
+
 h2 {
-  color: darkslategray;
+  color:white;
 }
 
 .formulario { gap: .8rem; }
 
 .formulario label {
-  color: darkslategray;
+  color: white;
   font-weight: 600;
 }
 
-.formulario input {
-  outline-color: darkslategray; 
+.input {
   padding: .5rem;
+  background-color: transparent;
   border: none;
-  border-radius: .3rem;
+  border-bottom: 2px solid rgb(66, 176, 250);  
+  
+  color: white;
+  font-size: 15px;
 }
 
 .boton {
   margin-top: 1rem;
-  color: beige;
-  background-color: darkslategray;
+  color:white;
+  background-color: rgb(66, 176, 250);
   padding: 1rem;
   border: none;
   border-radius: .5rem;
   cursor: pointer;
+  font-size: 17px;
+  font-weight: bolder;
 }
