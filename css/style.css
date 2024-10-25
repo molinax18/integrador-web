@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  font-family: sans-serif;
 }
 
 body {
@@ -19,8 +19,11 @@ ul {
 
 .header-principal {
   padding: 1.5rem 3rem;
-  background-color: darkslategrey;
-  color: beige;
+  background-color: rgb(66, 176, 250);
+  color:beige;
+  font-family:sans-serif;
+  border-bottom: 5px solid beige;
+  font-size: 20px;
 }
 
 .contenedor-header {
@@ -30,8 +33,9 @@ ul {
 }  
 
 .nombre {
-  font-size: 1.5rem;
+  font-size: 30px;
   text-transform: uppercase;
+
 }
     
 .nav-lista {

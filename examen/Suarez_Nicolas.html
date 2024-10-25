@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Formulario de Inscripcion</title>
+    <style>
+        body{background-color: beige;}
+
+        *{font-family: sans-serif;}
+
+        .formulario{
+            background-color: white;
+            border-top: 10px solid rgb(2, 155, 2);
+            border-radius: 15px;
+            width: 400px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 10px;
+        }
+
+        .Titulo{
+            font-weight: bold;
+            font-size: 30px;
+            width: 370px;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .texto{
+            width: 100%;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        .input{
+            width: 370px;
+            margin: auto;
+            padding: 8px;
+            margin-bottom: 3px;
+            border: 1px solid rgb(190, 190, 190); 
+            border-radius: 5px;
+            font-size: 17px;
+        }
+
+        .input2{
+            font-size: 17.4px;
+            margin-left: 20px;
+            font-weight: bolder;
+        }
+
+        .input3{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid rgb(190, 190, 190); 
+            border-radius: 5px;
+        }
+
+        .boton{
+            margin-top: 15px;
+            width: 100%;
+            padding: 7px;
+            background-color: rgb(6, 180, 6);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .feedback{
+            width: 100%;
+            background-color: rgb(19, 19, 19);
+            border-radius: 15px;
+            color: white;
+            padding: 20px;
+        }
+
+        h3{font-size: 25px;}
+
+        .p_fb{
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        .error {
+            border: 2px solid red;
+        }
+        .error-message {
+            color: red;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <form class="formulario" id="miFormulario">
+        <label>
+            <h1 class="Titulo">Formulario de Inscripcion</h1>
+
+            <p class="texto">Nombre Completo:</p>
+            <input class="input" type="text" required maxlength="50" id="nombre">
+            
+            <p class="texto">Edad:</p>
+            <input class="input" type="number" required min="16" id="edad">
+            
+            <p class="texto">Correo Electronico:</p>
+            <input class="input" type="email"  id="correo">
+            
+            <p class="texto">Genero:</p>
+            <label class="input2">
+                <input type="radio" name="genero" value="Masculino" required> Masculino
+            </label><br>
+            <label class="input2">
+                <input type="radio" name="genero" value="Femenino" required> Femenino
+            </label><br>
+            <label class="input2">
+                <input type="radio" name="genero" value="Otro" required> Otro
+            </label><br>
+
+            <p class="texto">Seleccione un deporte:</p>
+            <select class="input3" name="deportes" id="deportes" required>
+                <option value="">Seleccione un deporte</option>
+                <option value="Futbol">Futbol</option>
+                <option value="Basquet">Basquet</option>
+                <option value="Voley">Voley</option>
+            </select>
+
+            <button class="boton" type="submit">Enviar</button>
+        </label>
+    </form>
+
+    <div class="feedback">
+        <h3>Datos ingresados:</h3>
+        <p class="p_fb" id="fbNombre">Nombre:</p>
+        <p class="p_fb" id="fbEdad">Edad:</p>
+        <p class="p_fb" id="fbCorreo">Correo Electronico:</p>
+        <p class="p_fb" id="fbGenero">Genero:</p>
+        <p class="p_fb" id="fbDeporte">Deporte:</p>
+    </div>
+
+    <div id="errorContainer"></div>
+
+    <script>
+        document.getElementById('miFormulario').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const errorContainer = document.getElementById('errorContainer');
+            errorContainer.innerHTML = '';
+            const inputs = document.querySelectorAll('.input, input[type="radio"]');
+
+            inputs.forEach(input => input.classList.remove('error'));
+
+            const nombre = document.getElementById('nombre').value.trim();
+            const edad = document.getElementById('edad').value.trim();
+            const correo = document.getElementById('correo').value.trim();
+            const genero = document.querySelector('input[name="genero"]:checked');
+            const deporte = document.getElementById('deportes').value;
+
+            let valid = true;
+            const errors = [];
+
+            if (nombre === '') {
+                valid = false;
+                errors.push('El nombre es obligatorio.');
+                document.getElementById('nombre').classList.add('error');
+            }
+
+            if (edad === '' || edad < 16) {
+                valid = false;
+                errors.push('La edad debe ser mayor o igual a 16 años.');
+                document.getElementById('edad').classList.add('error');
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (correo === '' || !emailRegex.test(correo)) {
+                valid = false;
+                errors.push('El correo electrónico es obligatorio y debe tener un formato válido.');
+                document.getElementById('correo').classList.add('error');
+            }
+
+            if (!genero) {
+                valid = false;
+                errors.push('Debes seleccionar un género.');
+            }
+
+            if (deporte === '') {
+                valid = false;
+                errors.push('Debes seleccionar un deporte.');
+            }
+
+            if (!valid) {
+                errors.forEach(error => {
+                    const errorElement = document.createElement('p');
+                    errorElement.className = 'error-message';
+                    errorElement.textContent = error;
+                    errorContainer.appendChild(errorElement);
+                });
+            } else {
+                document.getElementById('fbNombre').textContent = 'Nombre: ' + nombre;
+                document.getElementById('fbEdad').textContent = 'Edad: ' + edad;
+                document.getElementById('fbCorreo').textContent = 'Correo Electronico: ' + correo;
+                document.getElementById('fbGenero').textContent = 'Genero: ' + genero.value;
+                document.getElementById('fbDeporte').textContent = 'Deporte: ' + deporte;
+
+                document.getElementById('miFormulario').reset();
+            }
+        });
+    </script>
+</body>
+</html>

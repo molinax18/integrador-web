@@ -2,17 +2,30 @@
   align-self: center;
   gap: 2rem;
   
+<<<<<<< HEAD
   width: 32rem;
   margin-top: 8rem;
+=======
+  width: 36rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+>>>>>>> cde8bee1a1f61e03a6d58e4892819f5bb0ebc7ac
   padding: 1.5rem;
   border-radius: 1rem;
-  border: 2px solid darkslategrey;
+  border: 2px solid rgb(66, 176, 250);
 }
 
+<<<<<<< HEAD
 fieldset {
   gap: 1.2rem;
 
   border: none;
+=======
+body{background-color:  rgb(32, 52, 70);}
+
+h2 {
+  color:white;
+>>>>>>> cde8bee1a1f61e03a6d58e4892819f5bb0ebc7ac
 }
 
 fieldset legend {
@@ -22,6 +35,7 @@ fieldset legend {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 fieldset label {
   color: darkslategray;
   font-weight: 600;
@@ -29,9 +43,21 @@ fieldset label {
 
 fieldset input {
   outline-color: darkslategray; 
+=======
+.formulario label {
+  color: white;
+  font-weight: 600;
+}
+
+.input {
+>>>>>>> cde8bee1a1f61e03a6d58e4892819f5bb0ebc7ac
   padding: .5rem;
+  background-color: transparent;
   border: none;
-  border-radius: .3rem;
+  border-bottom: 2px solid rgb(66, 176, 250);  
+  
+  color: white;
+  font-size: 15px;
 }
 
 .input-container {
@@ -45,15 +71,20 @@ fieldset input {
 
 .boton {
   margin-top: 1rem;
-  color: beige;
-  background-color: darkslategray;
+  color:white;
+  background-color: rgb(66, 176, 250);
   padding: 1rem;
   border: none;
   border-radius: .5rem;
   cursor: pointer;
+<<<<<<< HEAD
 }
 
 .error-input {
   font-weight: 600;
   color: brown;
+=======
+  font-size: 17px;
+  font-weight: bolder;
+>>>>>>> cde8bee1a1f61e03a6d58e4892819f5bb0ebc7ac
 }
