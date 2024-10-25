@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/contacto.css" />
+    <script src="/js/validacionForm.js" defer></script>
     <title>Contacto</title>
   </head>
   <body>
@@ -24,23 +25,30 @@
       </div>
     </header>
     <main class="contenedor flex-col">
-      <div class="contenedor-formulario flex-col">
-        <h2>Contacto</h2>
-        <form
-          novalidate
-          class="flex-col formulario"
-        >
-          <label>Nombre</label>
-          <input type="text" />
-          <label>Apellido</label>
-          <input type="text" />
-          <label>Fecha de nacimiento</label>
-          <input type="date" />
-          <label>Correo</label>
-          <input type="email" />
-          <button class="boton">Enviar</button>
-        </form>
-      </div>
+      <form novalidate class="formulario flex-col" id="formContacto">
+        <fieldset class="flex-col">
+          <legend>Contacto</legend>
+          <div class="input-container flex-col">
+            <div class="input-container-header">
+              <label>Nombre *</label>
+            </div>
+            <input type="text" name="nombre" />
+          </div>
+          <div class="input-container flex-col">
+            <div class="input-container-header">
+              <label>Apellido *</label>
+            </div>
+            <input type="text" name="apellido" />
+          </div>
+          <div class="input-container flex-col">
+            <div class="input-container-header">
+              <label>Correo *</label>
+            </div>
+            <input type="email" name="correo" />
+          </div>
+        </fieldset>
+        <button class="boton">Enviar</button>
+      </form>
     </main>
   </body>
 </html>

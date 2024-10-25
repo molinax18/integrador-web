@@ -1,30 +1,46 @@
-.contenedor-formulario {
+.formulario {
   align-self: center;
   gap: 2rem;
   
-  width: 36rem;
+  width: 32rem;
   margin-top: 8rem;
   padding: 1.5rem;
   border-radius: 1rem;
   border: 2px solid darkslategrey;
 }
 
-h2 {
-  color: darkslategray;
+fieldset {
+  gap: 1.2rem;
+
+  border: none;
 }
 
-.formulario { gap: .8rem; }
+fieldset legend {
+  color: darkslategray;
+  font-size: 1.5rem;
+  margin-bottom: 1.8rem;
+  font-weight: bold;
+}
 
-.formulario label {
+fieldset label {
   color: darkslategray;
   font-weight: 600;
 }
 
-.formulario input {
+fieldset input {
   outline-color: darkslategray; 
   padding: .5rem;
   border: none;
   border-radius: .3rem;
+}
+
+.input-container {
+  gap: .5rem;
+}
+
+.input-container-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .boton {
@@ -35,4 +51,9 @@ h2 {
   border: none;
   border-radius: .5rem;
   cursor: pointer;
+}
+
+.error-input {
+  font-weight: 600;
+  color: brown;
 }
