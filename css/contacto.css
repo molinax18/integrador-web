@@ -63,6 +63,7 @@ fieldset input {
 .boton {
   margin-top: 1rem;
   color:white;
+  font-size: 18px;
   background-color: rgb(66, 176, 250);
   padding: 1rem;
   border: none;
@@ -73,4 +74,14 @@ fieldset input {
 .error-input {
   font-weight: bolder;
   color: brown;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(66, 176, 250);
+  margin-bottom: 0px;
+  bottom: 0;
+  width: 100%;
+  color: white;
 }

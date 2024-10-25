@@ -128,3 +128,13 @@ h3{
   cursor: pointer;
   text-transform: uppercase;
 }
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(32, 52, 70);
+  margin-bottom: 0px;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
