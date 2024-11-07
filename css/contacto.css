@@ -18,7 +18,9 @@ fieldset {
   border: none;
 }
 
-body{ background-color:  rgb(32, 52, 70); }
+body {
+  background-color:  rgb(32, 52, 70);
+}
 
 fieldset legend {
   color: white;
@@ -63,6 +65,7 @@ fieldset input {
 .boton {
   margin-top: 1rem;
   color:white;
+  font-size: 18px;
   background-color: rgb(66, 176, 250);
   padding: 1rem;
   border: none;
@@ -146,9 +149,8 @@ fieldset input {
   
   color: white;
   padding: 1rem 1.5rem;
-  background-color: rgb(66, 176, 250);
+  background-color: darkgreen;
   border-radius: .5rem;
   border-left:6px solid white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-

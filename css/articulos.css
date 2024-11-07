@@ -59,13 +59,3 @@ h3{
     height: auto;
     border-radius: 5px;
 }
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(66, 176, 250);
-    margin-bottom: 0px;
-    bottom: 0;
-    width: 100%;
-    color: white;
-}

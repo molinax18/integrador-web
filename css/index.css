@@ -126,3 +126,7 @@ h3{
   cursor: pointer;
   text-transform: uppercase;
 }
+
+footer {
+  background-color: rgb(32, 52, 70);
+}

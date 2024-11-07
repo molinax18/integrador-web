@@ -1,12 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   
   font-family: sans-serif;
 }
 
 body {
   background: seashell;
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
 }
 
 a {
@@ -57,4 +61,14 @@ ul {
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(66, 176, 250);
+  margin-bottom: 0px;
+  width: 100%;
+  color: white;
+  bottom: 0;
 }
