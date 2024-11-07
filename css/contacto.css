@@ -124,6 +124,7 @@ fieldset input {
 
 .modal footer {
   display: flex;
+  background-color: inherit;
   justify-content: space-between;
 }
 
