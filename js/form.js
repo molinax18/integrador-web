@@ -1,4 +1,3 @@
-const images = ["img/auto1.webp", "img/auto2.webp", "img/auto3.webp", "./img/auto4.webp"];
 const form = document.getElementById("formContacto");
 const inputs = document.querySelectorAll("input");
 const errores = {
@@ -9,24 +8,6 @@ const errores = {
 const expresiones = {
   texto: /^[a-zA-Z\s]+$/,
   correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-}
-let i = 0;
-
-const carrousellImg = document.getElementById("carrousellImg");
-carrousellImg.src = images[0];
-
-function increment() {
-  if (i === images.length - 1) i = 0; 
-  
-  i++;
-  carrousellImg.src = images[i];
-}
-
-function decrement() {
-  if (i === 0) i = images.length; 
-  
-  i--;
-  carrousellImg.src = images[i];
 }
 
 inputs.forEach(inp => {
